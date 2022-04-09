@@ -105,8 +105,8 @@ $(function() {
         var width = $(window).width();
         if(width < 991) {
           $('.menu-trigger').removeClass('active');
-          $('.header-area .nav').slideUp(200);  
-        }       
+          $('.header-area .nav').slideUp(200);
+        }
         $('html,body').animate({
           scrollTop: (target.offset().top) + 1
         }, 700);
