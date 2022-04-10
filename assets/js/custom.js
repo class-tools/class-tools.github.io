@@ -127,8 +127,9 @@ $(function() {
               $(this).removeClass('active');
           })
           $(this).addClass('active');
+          var target = this.hash;
           menu = target;
-          var target = $(this.hash);
+          target = $(this.hash);
           $('html, body').stop().animate({
               scrollTop: (target.offset().top) + 1
           }, 500, 'swing', function () {
