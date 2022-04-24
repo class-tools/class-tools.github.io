@@ -445,12 +445,12 @@
               <div class="row">
                 <div class="col-lg-6 col-sm-6">
                   <fieldset>
-                    <input type="subject" name="subjectMail" class="email" placeholder="Email Address..." autocomplete="on" required>
+                    <input type="body" id="bodyMail" class="email" placeholder="Email Address..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <fieldset>
-                    <button type="submit" class="main-button" onclick="window.location.href='mailto:ldfx_ryc@163.com?subject=Join%20Class%20Tools%20Develop%20Team\'s%20Mailing%20List&body=My%20E-mail%20address%20is%20{Please enter}.'">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                    <button type="submit" class="main-button" onclick="window.location.href=('mailto:ldfx_ryc@163.com?subject=Join%20Class%20Tools%20Develop%20Team\'s%20Mailing%20List&body=My%20E-mail%20address%20is%20' + document.getElementById('bodyMail').value + '.')">Subscribe Now <i class="fa fa-angle-right"></i></button>
                   </fieldset>
                 </div>
               </div>
