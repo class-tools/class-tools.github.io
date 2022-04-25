@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/100061863" media="screen">
+    <title>Typing practice &#x6253;&#x5B57;&#x7EC3;&#x4E60;</title>
+    <style>
+      body {
+        background-color: #f1f1f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .keyboard {
+        user-select: none;
+        cursor: pointer;
+        transform: scale(1.0) translate(200px, 100px); 
+      }
+      .keys {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        box-shadow: 0 -6px 10px rgba(255, 255, 255), 0 4px 15px rgba(0, 0, 0, 0.3);
+        height: 5em;
+        width: 6em;
+        font-size: 1em;
+        margin: 0.3em;
+        background-color: #f2f2f2;
+        border-radius:15px ;
+        -webkit-border-radius:15px ;
+        -moz-border-radius:15px ;
+        -ms-border-radius:15px ;
+        -o-border-radius:15px ;
+        text-align: center;
+        line-height: 5em;
+        letter-spacing: 2px;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+      }
+      .act{
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+        color: rgba(12, 164, 190);
+        text-shadow: 0 0 15px #57c1f1;
+      }
+      .ale{
+        box-shadow: 0 -6px 10px rgba(255, 255, 255), 0 4px 15px red;
+      }
+      .wun{
+        color: #eb3f33;
+      }
+      .two{
+        color: #df960e;
+      }
+      .three{
+        color: #2b46df;
+      }
+      .four{
+        color: rgb(57, 194, 75);
+      }
+      .five{
+        color: #8919ca;
+      }
+      .six{
+        color: #e73d09;
+      }
+      .Esc{
+        width: 10em;
+      }
+      .back{
+        width: 10.1em;
+      }
+      .Tab{
+        width: 10em;
+      }
+      .Caps{
+        width: 11em;
+      }
+      .Enter{
+        width: 11.5em;
+      }
+      .Shift{
+        width: 14.6em;
+      }
+      .ctrl,
+      .win,
+      .alt,
+      .book{
+        width: 9.5em;
+      }
+      .space{
+        width: 35.6em;
+      }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(this).keydown(function(event){
+      var div = document.getElementById(String.fromCharCode(event.keyCode));
+      div.className = 'act';
+  });
+  $(this).keyup(function(event){
+      var div = document.getElementById(String.fromCharCode(event.keyCode));
+      div.className = '';
+                 if(String.fromCharCode(event.keyCode)==$("button").html()){
+                   $("button").html(String.fromCharCode(Math.floor(Math.random() * 26)+65));
+       var divv = document.getElementById($("button").html());
+                   divv.className+=" ale";
+                 }
+  });
+  $("li").mousedown(function(){
+      var div = document.getElementById($(this).attr('id'));
+      div.className = 'act';
+  });
+  $("li").mouseup(function(){
+      var div = document.getElementById($(this).attr('id'));
+      div.className = '';
+                 if($(this).attr('id')==$("button").html()){    
+                   $("button").html(String.fromCharCode(Math.floor(Math.random() * 26)+65));
+       var divv = document.getElementById($("button").html());
+                   divv.className+=" ale";
+                 }
+  });
+});
+</script>
+  </head>
+  <body>
+    <button>A</button>
+    <!-- &#36896;&#38190;&#30424;&#31532;&#19968;&#27493;&#32943;&#23450;&#23601;&#26159;&#25226;&#38190;&#24125;&#19978;&#30340;&#23383;&#27597;&#25171;&#20986;&#26469;&#21862; -->
+    <!-- &#36825;&#37324;&#25105;&#29992;&#20102;ul>li&#30340;&#26041;&#24335;&#36827;&#34892;&#24067;&#23616;&#65292;ul&#23450;&#20041;&#34892;&#65292;li&#23450;&#20041;&#21015; -->
+    <!-- &#28982;&#21518;&#32473;&#20851;&#38190;&#23383;&#65288;&#23485;&#24230;&#19981;&#19968;&#26679;&#65289;&#21152;&#19978;&#29305;&#27530;&#30340;class -->
+    <div class="keyboard">
+      <!--<ul class="keys wun">
+        <li class="Esc">Esc</li>
+        <li>F1</li>
+        <li>F2</li>
+        <li>F3</li>
+        <li>F4</li>
+        <li>F5</li>
+        <li>F6</li>
+        <li>F7</li>
+        <li>F7</li>
+        <li>F8</li>
+        <li>F9</li>
+        <li>F10</li>
+        <li>F11</li>
+        <li>F12</li>
+      </ul>
+      <ul class="keys two">
+        <li>`</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>7</li>
+        <li>8</li>
+        <li>0</li>
+        <li>-</li>
+        <li>=</li>
+        <li class="back">&#11013;</li>
+      </ul>-->
+      <ul class="keys three">
+        <li class="Tab">Tab</li>
+        <li id="Q">Q</li>
+        <li id="W">W</li>
+        <li id="E">E</li>
+        <li id="R">R</li>
+        <li id="T">T</li>
+        <li id="Y">Y</li>
+        <li id="U">U</li>
+        <li id="I">I</li>
+        <li id="O">O</li>
+        <li id="P">P</li>
+        <li id="[">[</li>
+        <li id="]">]</li>
+        <li id="\">\</li>
+      </ul>
+      <ul class="keys four">
+        <li class="Caps">Caps</li>
+        <li id="A">A</li>
+        <li id="S">S</li>
+        <li id="D">D</li>
+        <li id="F">F</li>
+        <li id="G">G</li>
+        <li id="H">H</li>
+        <li id="J">J</li>
+        <li id="K">K</li>
+        <li id="L">L</li>
+        <li id=";">;</li>
+        <li id="">""</li>
+        <li class="Enter">Enter</li>
+      </ul>
+      <ul class="keys five">
+        <li class="Shift">Shift</li>
+        <li id="Z">Z</li>
+        <li id="X">X</li>
+        <li id="C">C</li>
+        <li id="V">V</li>
+        <li id="B">B</li>
+        <li id="N">N</li>
+        <li id="M">M</li>
+        <li id=",">,</li>
+        <li id=".">.</li>
+        <li id="?">?</li>
+        <li class="Shift">Shift</li>
+      </ul>
+      <ul class="keys six">
+        <li class="ctrl">ctrl</li>
+        <li class="win">win</li>
+        <li class="alt">alt</li>
+        <li class="space"></li>
+        <li class="alt">alt</li>
+        <li class="book">&#128213;</li>
+        <li class="ctrl">ctrl</li>
+      </ul>
+    </div>
+  </body>
+</html>
