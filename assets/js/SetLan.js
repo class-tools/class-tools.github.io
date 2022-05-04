@@ -87,7 +87,7 @@ dropdown_list.addEventListener("click",(e)=>{
     const clicked_item_icon=icons[clicked_item_text];
     transformLanguage(Languages[clicked_item_text],nowl);
     nowl = Languages[clicked_item_text];
-    setCookie('Lan',nowl,7);
+    setCookie('Lan',nowl,7);//The Cookie:Lan is Users Language
     console.log(Languages[clicked_item_text]);
     dropdown_title_icon.innerHTML=iconTemplate(clicked_item_icon);
     dropdown_title.innerHTML=clicked_item_text;
