@@ -60,7 +60,7 @@ function transformLanguage(newLanguage,OldL = 'en') {
         let str1 = appid + query + salt + key;
         let sign = hex_md5(str1);
         $.ajax({
-            url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+            url: 'https://api.fanyi.baidu.com/api/trans/vip/translate',
             type: 'get',
             dataType: 'jsonp',
             data: {
