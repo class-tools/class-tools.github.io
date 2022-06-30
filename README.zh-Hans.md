@@ -2,9 +2,9 @@
 <img src="https://avatars.githubusercontent.com/u/100061863" width="200">
 </p>
 
-<h1 align="center">- Class Tools Develop Team 官方网站 -</h1>
+<h1 align="center">- 课堂工具开发团队官方网站 -</h1>
 
-Class Tools Develop Team 官方网站。
+课堂工具开发团队官方网站。
 
 [English](./README.md) | **简体中文**
 
