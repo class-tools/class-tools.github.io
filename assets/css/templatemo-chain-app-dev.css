@@ -181,7 +181,7 @@ body {
   color: #2a2a2a;
   font-size: 30px;
   font-weight: 700;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 10px;
 }
 
@@ -208,7 +208,7 @@ body {
   display: inline-block !important;
   padding: 10px 20px !important;
   color: #4b8ef1 !important;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 15px;
   background-color: #fff;
   border-radius: 23px;
@@ -245,7 +245,7 @@ body {
   display: inline-block !important;
   padding: 10px 20px !important;
   color: #fff !important;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 15px;
   background: rgb(19,175,240);
   background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
@@ -266,7 +266,7 @@ body {
   padding: 10px 20px !important;
   color: #4b8ef1 !important;
   border: 1px solid #4b8ef1;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 15px;
   display: inline-block;
   background-color: #fff;
@@ -415,7 +415,7 @@ header
   font-weight: 500;
   font-size: 15px;
   color: #2a2a2a;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1834,7 +1834,7 @@ a.btn_red {
   margin: 20px 0;
   clear: both;
   overflow: hidden;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .user_login label {
@@ -2215,4 +2215,16 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+
+.change-lang {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2a2a2a;
+  /* text-transform: capitalize; */
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
 }

@@ -1,1 +1,13 @@
-<meta http-equiv="refresh" content="1;url=/en-US/">
+<script>
+    if(window.localStorage["LanguageBar"] == "zh-CN") {
+        window.location.href = "/zh-CN/"
+    } else if(window.localStorage["LanguageBar"] == "en-US") {
+        window.location.href = "/en-US/"
+    } else if(navigator.language == "zh-CN") {
+        window.localStorage["LanguageBar"] = "zh-CN"
+        window.location.href = "/zh-CN/"
+    } else {
+        window.localStorage["LanguageBar"] = "en-US"
+        window.location.href = "/en-US/"
+    }
+</script>
