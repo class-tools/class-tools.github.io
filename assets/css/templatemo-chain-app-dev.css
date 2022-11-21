@@ -2216,15 +2216,3 @@ responsive
     padding: 30px;
   }
 }
-
-.change-lang {
-  display: block;
-  font-weight: 500;
-  font-size: 15px;
-  color: #2a2a2a;
-  /* text-transform: capitalize; */
-  height: 40px;
-  line-height: 40px;
-  border: transparent;
-  letter-spacing: 1px;
-}
