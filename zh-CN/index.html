@@ -42,6 +42,7 @@
                 <li class="scroll-to-section"><a href="#users">评价</a></li>
                 <li class="scroll-to-section"><a href="#newsletter">订阅</a></li>
                 <li><div class="gradient-button"><a id="support-us" href="https://github.com/class-tools/"><i class="fa fa-support-us-alt"></i>支持我们</a></div></li>
+                <li><div class="gradient-button"><a href="JavaScript:ChangeLanguageBar()" title="切换到下一种语言。">简体中文 (zh-CN) <i class="fa fa-angle-down"></i></a></div></li>
               </ul>
               <a class='menu-trigger'>
                 <span>菜单</span>
@@ -98,7 +99,7 @@
           <div class="col-lg-8 offset-lg-2">
             <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
               <h4>为您提供卓越的<em>服务和功能</em></h4>
-              <img src="/assets/images/heading-line-dec.png" alt="">请到发布页面。
+              <img src="/assets/images/heading-line-dec.png" alt="">
               <p>如果您需要有关项目的完整信息，请访问<a rel="noopener" href="https://github.com/class-tools/" target="_blank">我们在 GitHub 上的组织</a>。如果您需要下载程序，请到发布页面。</p>
             </div>
           </div>
@@ -457,7 +458,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <fieldset>
-                    <button type="submit" class="main-button" onclick="window.location.href=('mailto:ldfx_ryc@163.com?subject=Join%20Class%20Tools%20Develop%20Team\'s%20Mailing%20List&body=My%20E-mail%20address%20is%20' + document.getElementById('bodyMail').value + '.')">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                    <button type="submit" class="main-button" onclick="window.location.href=('mailto:ldfx_ryc@163.com?subject=Join%20Class%20Tools%20Develop%20Team\'s%20Mailing%20List&body=My%20E-mail%20address%20is%20' + document.getElementById('bodyMail').value + '.')">立即订阅 <i class="fa fa-angle-right"></i></button>
                   </fieldset>
                 </div>
               </div>
@@ -518,13 +519,13 @@
               <p>课堂工具开发团队</p>
               <p>专注于提高课堂的趣味性。</p>
             </div>
-          </div>
+          </div><!--
           <div class="col-lg-3">
             <div class="footer-widget">
               <h4>切换语言</h4>
               <p><a href="/en-US">美式英语 (en-US)</a></p>
             </div>
-          </div>
+          </div>-->
           <div class="col-lg-12">
             <div class="copyright-text">
               <p>版权所有 © 2022 课堂工具开发团队。保留所有权利。
@@ -542,5 +543,6 @@
     <script src="/assets/js/popup.js"></script>
     <script src="/assets/js/custom.js"></script>
     <script src="/assets/js/Cookies.js"></script>
+    <script>window.onload = SetLang("zh-CN");</script>
   </body>
 </html>

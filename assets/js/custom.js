@@ -1,3 +1,7 @@
+function SetLang(lang) {
+  if(!window.localStorage["LanguageBar"]) window.localStorage["LanguageBar"] = lang;
+}
+
 (function ($) {
 "use strict";
 // Header Type = Fixed
@@ -161,3 +165,13 @@ $(function() {
     });
   }
 })(window.jQuery);
+
+function ChangeLanguageBar() {
+  if(window.localStorage["LanguageBar"] == "en-US") {
+    window.localStorage["LanguageBar"] = "zh-CN";
+    window.location.href = "/zh-CN/";
+  } else {
+    window.localStorage["LanguageBar"] = "en-US";
+    window.location.href = "/en-US/";
+  }
+}
