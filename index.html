@@ -1,14 +1,14 @@
 <script>
-    if(window.localStorage["LanguageBar"] == "zh-CN") {
+    if (window.localStorage["LanguageBar"] == "zh-CN") {
         window.location.href = "/lang/zh-CN/"
-    } else if(window.localStorage["LanguageBar"] == "en-US") {
-        window.location.href = "/lang/en-US/"
-    } else if(window.localStorage["LanguageBar"] == "zh-TW") {
+    } else if (window.localStorage["LanguageBar"] == "zh-TW") {
         window.location.href = "/lang/zh-TW/"
-    } else if(navigator.language == "zh-CN") {
+    } else if (window.localStorage["LanguageBar"] == "en-US") {
+        window.location.href = "/lang/en-US/"
+    } else if (navigator.language == "zh-CN") {
         window.localStorage["LanguageBar"] = "zh-CN"
         window.location.href = "/lang/zh-CN/"
-    } else if(navigator.language == "zh-TW") {
+    } else if (navigator.language == "zh-TW") {
         window.localStorage["LanguageBar"] = "zh-TW"
         window.location.href = "/lang/zh-TW/"
     } else {
