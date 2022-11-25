@@ -2,13 +2,13 @@
 <img src="https://avatars.githubusercontent.com/u/100061863" width="200">
 </p>
 
-<h1 align="center">- Class Tools Develop Team Official Website -</h1>
+<h1 align="center">- 课堂工具开发团队官方网站 -</h1>
 
-Class Tools Develop Team Official Website.
+课堂工具开发团队官方网站。
 
-**English** | [简体中文](./README.zh-CN.md)
+[English](./README.md) | **简体中文**
 
-### Contributors
+### 贡献名单
 
 | <img src="https://avatars.githubusercontent.com/u/67366523?v=4" width="60px"></br> tigerchen-coder | <img src="https://avatars.githubusercontent.com/u/53416099?v=4" width="60px"></br> ren-yc (Yuchen Ren) | <img src="https://avatars.githubusercontent.com/u/95127214?v=4" width="60px"></br> Orlicz | <img src="https://avatars.githubusercontent.com/u/100132650?v=4" width="60px"></br> hjl2011 |
 | :---: | :---: | :---: | :---: |
