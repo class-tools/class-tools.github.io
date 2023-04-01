@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="/assets/css/templatemo-chain-app-dev.css">
       <link rel="stylesheet" href="/assets/css/animated.css">
       <link rel="stylesheet" href="/assets/css/owl.css">
+      <link rel="stylesheet" href="/assets/css/custom.css">
     </head>
   <body>
     <div id="js-preloader" class="js-preloader">
@@ -42,7 +43,13 @@
                 <li class="scroll-to-section"><a href="#users">评价</a></li>
                 <li class="scroll-to-section"><a href="#newsletter">订阅</a></li>
                 <li><div class="gradient-button"><a id="support-us" href="https://github.com/class-tools/"><i class="fa fa-support-us-alt"></i>支持我们</a></div></li>
-                <li><div class="gradient-button"><a href="JavaScript:ChangeLanguageBar()" title="切换到下一种语言。">简体中文 (zh-CN) <i class="fa fa-angle-down"></i></a></div></li>
+                <li>
+                  <select id="change-lang" autocomplete="off" onchange="ChangeLanguage()">
+                    <option value="en-US">en-US</option>
+                    <option value="zh-CN" selected>zh-CN</option>
+                    <option value="zh-TW">zh-TW</option>
+                  </select>
+                </li>
               </ul>
               <a class='menu-trigger'>
                 <span>菜单</span>
@@ -156,7 +163,7 @@
           <div class="col-lg-6 align-self-center">
             <div class="section-heading">
               <h4>关于<em>我们做什么</em>和我们是谁</h4>
-              <img src="assets/images/heading-line-dec.png" alt="">
+              <img src="/assets/images/heading-line-dec.png" alt="">
               <p>专注于提高课堂的兴趣。</p>
             </div>
             <div class="row">
@@ -504,7 +511,6 @@
                 <li><a href="https://github.com/hjl2011/">hjl2011</a></li>
                 <li><a href="https://github.com/LZY122625/">LZY122625</a></li>
                 <li><a href="https://github.com/Orlicz/">Orlicz</a></li>
-                <li><a href="https://github.com/bj6872/">bj6872</a></li>
                 <li><a href="https://github.com/tigerchen-coder/">tigerchen-coder</a></li>
                 <li><a href="https://github.com/Lotuses-robot/">Lotuses-robot</a></li>
               </ul>

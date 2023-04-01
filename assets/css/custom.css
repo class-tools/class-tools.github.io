@@ -1,0 +1,12 @@
+select {
+    background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+    margin-left: 2.5px;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+}
