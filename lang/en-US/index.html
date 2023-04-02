@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="/assets/css/templatemo-chain-app-dev.css">
       <link rel="stylesheet" href="/assets/css/animated.css">
       <link rel="stylesheet" href="/assets/css/owl.css">
+      <link rel="stylesheet" href="/assets/css/custom.css">
     </head>
   <body>
     <div id="js-preloader" class="js-preloader">
@@ -42,7 +43,13 @@
                 <li class="scroll-to-section"><a href="#users">Evaluations</a></li>
                 <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
                 <li><div class="gradient-button"><a id="support-us" href="https://github.com/class-tools/"><i class="fa fa-support-us-alt"></i>Support Us</a></div></li>
-                <li><div class="gradient-button"><a href="JavaScript:ChangeLanguageBar()" title="Change to next language.">English (en-US) <i class="fa fa-angle-down"></i></a></div></li>
+                <li>
+                  <select id="change-lang" autocomplete="off" onchange="ChangeLanguage()">
+                    <option value="en-US" selected>en-US</option>
+                    <option value="zh-CN">zh-CN</option>
+                    <option value="zh-TW">zh-TW</option>
+                  </select>
+                </li>
               </ul>
               <a class='menu-trigger'>
                 <span>Menu</span>
@@ -156,7 +163,7 @@
           <div class="col-lg-6 align-self-center">
             <div class="section-heading">
               <h4>About <em>What We Do</em> &amp; Who We Are</h4>
-              <img src="assets/images/heading-line-dec.png" alt="">
+              <img src="/assets/images/heading-line-dec.png" alt="">
               <p>Focus on improving the interest of the classroom.</p>
             </div>
             <div class="row">
@@ -504,7 +511,6 @@
                 <li><a href="https://github.com/hjl2011/">hjl2011</a></li>
                 <li><a href="https://github.com/LZY122625/">LZY122625</a></li>
                 <li><a href="https://github.com/Orlicz/">Orlicz</a></li>
-                <li><a href="https://github.com/bj6872/">bj6872</a></li>
                 <li><a href="https://github.com/tigerchen-coder/">tigerchen-coder</a></li>
                 <li><a href="https://github.com/Lotuses-robot/">Lotuses-robot</a></li>
               </ul>

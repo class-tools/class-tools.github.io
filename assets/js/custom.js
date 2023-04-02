@@ -150,6 +150,44 @@ $(function() {
   $(window).on('load', function() {
       $('#js-preloader').addClass('loaded');
   });
+  var img_urls = [
+    '/assets/images/about-bg.jpg',
+    '/assets/images/about-right-dec.png',
+    '/assets/images/client-bg.png',
+    '/assets/images/client-image.png',
+    '/assets/images/eval-01.png',
+    '/assets/images/footer-bg.png',
+    '/assets/images/heading-line-dec.png',
+    '/assets/images/logo.png',
+    '/assets/images/pricing-table-01.png',
+    '/assets/images/pricing-table-02.png',
+    '/assets/images/pro-table-bottom.png',
+    '/assets/images/pro-table-top.png',
+    '/assets/images/quote.png',
+    '/assets/images/regular-table-bottom.png',
+    '/assets/images/regular-table-top.png',
+    '/assets/images/service-bg.jpg',
+    '/assets/images/service-icon-01.png',
+    '/assets/images/service-icon-02.png',
+    '/assets/images/service-icon-03.png',
+    '/assets/images/service-icon-04.png',
+    '/assets/images/service-icon-hover-01.png',
+    '/assets/images/service-icon-hover-02.png',
+    '/assets/images/service-icon-hover-03.png',
+    '/assets/images/service-icon-hover-04.png',
+    '/assets/images/services-left-dec.png',
+    '/assets/images/services-right-dec.png',
+    '/assets/images/slider-dec.png',
+    '/assets/images/slider-left-dec.png',
+    '/assets/images/white-logo.png'
+  ];
+  var len = img_urls.length;
+  var images = [];
+  for (var i = 0; i < len; i++) {
+    var img = new Image();
+    img.src = img_urls[i];
+    images.push(img);
+  }
   // Window Resize Mobile Menu Fix
   function mobileNav() {
     var width = $(window).width();

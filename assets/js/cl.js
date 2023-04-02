@@ -1,18 +1,11 @@
-function ChangeLanguageBar() {
-    if (window.localStorage["LanguageBar"] == "en-US") {
-      window.localStorage["LanguageBar"] = "zh-CN";
-      window.location.href = "/lang/zh-CN/";
-    } else if (window.localStorage["LanguageBar"] == "zh-CN") {
-      window.localStorage["LanguageBar"] = "zh-TW";
-      window.location.href = "/lang/zh-TW/";
-    } else { // zh-TW
-      window.localStorage["LanguageBar"] = "en-US";
-      window.location.href = "/lang/en-US/";
-    }
+function ChangeLanguage() {
+    var lang_text = document.getElementById("change-lang").value;
+    window.localStorage["LanguageBar"] = lang_text;
+    window.location.href = `/lang/${lang_text}`;
 }
 
 function SetLang(lang) {
-    if (!window.localStorage["LanguageBar"]) window.localStorage["LanguageBar"] = lang;
+    window.localStorage["LanguageBar"] = lang;
 }
 
 function Change_Lang(lang_id) {
@@ -24,7 +17,7 @@ function Change_Lang(lang_id) {
         // zh-CN
         window.localStorage["LanguageBar"] = "zh-CN";
         window.location.href = "/lang/zh-CN/";
-    } else {
+    } else if (lang_id == 3) {
         // zh-TW
         window.localStorage["LanguageBar"] = "zh-TW";
         window.location.href = "/lang/zh-TW/";
